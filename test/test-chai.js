@@ -9,10 +9,13 @@
  */
 
 
-var assert = require("chai").assert;
-var expect = require("chai").expect;
+//var assert = require("chai").assert;
+//var expect = require("chai").expect;
+//const operacions = require("../src/operacions");
 
-const operacions = require("../src/operacions");
+
+import chai from 'chai';
+import {creaArrayDe3} from '../src/js/operacions.mjs';
 
 
  /* DESCRIBE: apartat */
@@ -20,31 +23,31 @@ describe("#proves amb creaArrayDe3()", function () {
     /* IT: TEST CASE */
   it("la longitud es 3", function () {
     //assert.lengthOf()
-    assert.lengthOf(
-      operacions.creaArrayDe3(1, 2, 3),
+    chai.assert.lengthOf(
+      creaArrayDe3(1, 2, 3),
       3,
       "array es de longitud 3"
     );
     //expect().to.have.length()
-    expect(operacions.creaArrayDe3(1, 2, 3)).to.have.length(3);
+    chai.expect(creaArrayDe3(1, 2, 3)).to.have.length(3);
   });
 
   it("Els tres elements de l'array estan inclosos a dins d'ell", function () {
     //expect().to.include()
-    expect(operacions.creaArrayDe3(10, 20, 35)).to.include(10);
-    expect(operacions.creaArrayDe3(10, 20, 35)).to.include(20);
-    expect(operacions.creaArrayDe3(10, 20, 35)).to.include(35);
+    chai.expect(creaArrayDe3(10, 20, 35)).to.include(10);
+    chai.expect(creaArrayDe3(10, 20, 35)).to.include(20);
+    chai.expect(creaArrayDe3(10, 20, 35)).to.include(35);
   });
 
   /* CONTEXT: Purament descriptiu, subapartat dins un Describe */
   context("amb numeros", function () {
     it("Els tres elements són de tipus 'number", function () {
       //assert.typeOf
-      assert.typeOf(operacions.creaArrayDe3(10, 20, 35)[0], "number");
+      chai.assert.typeOf(creaArrayDe3(10, 20, 35)[0], "number");
       //assert.equal
-      assert.equal(typeof operacions.creaArrayDe3(10, 20, 35)[1], "number");
+      chai.assert.equal(typeof creaArrayDe3(10, 20, 35)[1], "number");
       //expect().to.be.a()
-      expect(operacions.creaArrayDe3(10, 20, 35)[2]).to.be.a("number");
+      chai.expect(creaArrayDe3(10, 20, 35)[2]).to.be.a("number");
     });
   });
 

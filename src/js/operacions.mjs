@@ -5,14 +5,10 @@ export function suma(x, y) {
   }
 
   return x + y;
-//  return parseFloat(x) + parseFloat(y);
+  return parseFloat(x) + parseFloat(y);
 }
 
 export function creaArrayDe3(a,b,c) {
   return [a,b,c];
 }
-
-// EXPORTAR AIXÍ QUAN VULL FER UN TEST
-// Proves amb CHAI
-
 

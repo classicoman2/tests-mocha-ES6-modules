@@ -5,9 +5,14 @@
  * https://masteringjs.io/tutorials/mocha/async
  */
 
-const assert = require("assert");
-const axios = require("axios");
-const fetch = require("node-fetch");
+//const assert = require("assert");
+//const axios = require("axios");
+//const fetch = require("node-fetch");
+
+import assert from 'assert';
+import axios from 'axios';
+import fetch from 'node-fetch';
+import {suma} from '../src/js/operacions.mjs';
 
 
 // Amb axios (tutorial adalt)
