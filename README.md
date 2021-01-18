@@ -39,7 +39,7 @@ npm install --save-dev mocha
   "type": "module"
 
 ```
-> En cas de no tenir fitxer `package.json`, crea'l abans amb `npm init`
+> En cas de no tenir fitxer `package.json`, crea'l abans amb `npm init -y`
 
 ### Executar els test,
 
