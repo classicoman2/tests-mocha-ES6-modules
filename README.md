@@ -25,7 +25,7 @@ npm install --save-dev mocha
 2. Crea una carpeta anomenada `test` en el directori arrel i introdueix a dins els fitxers de test (com en l'exemple d'aquest repositori.)
 3. En el `package.json`, hi ha d'haver un descriptor en el primer nivell com:
 ```
-  "type": {
+  "scripts": {
     "test": "mocha test"
   }
 ```
