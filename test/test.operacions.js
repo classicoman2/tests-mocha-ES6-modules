@@ -1,23 +1,23 @@
-import assert from 'assert';
-import {suma, creaArrayDe3} from '../src/js/operacions.mjs';
+import assert from "assert";
+import { suma, creaArrayDe3 } from "../src/js/operacions.mjs";
 
-describe('Funció suma()',  function() {
+describe("Tests per la funció suma()", function () {
+  it("test: suma() suma 2 numeros correctament", () => {
+    assert.strictEqual(suma(2, 2), 4);
+    assert.strictEqual(suma(20, 2), 22);
+    assert.strictEqual(suma(2.5, -2.5), 0);
+  });
 
-    it('suma entre 2 numeros', () => {
-        assert.strictEqual( suma(2,2), 4 )
-        assert.strictEqual( suma(-5,55.05), 50.05 )
-        //assert.strictEqual( suma(0,0), 1)
-    })
-
-    it('suma entre un nombre i no nombre retorna NaN', () => {
-        assert.strictEqual( isNaN(suma(100, 'patata')), true )
-        assert.strictEqual( isNaN(suma(100, {nom: 'John'})), true )
-    })
+  it("test: la suma entre un nombre i no nombre retorna NaN", () => {
+    assert.strictEqual(isNaN(suma(100, "patata")), true);
+  });
 });
 
-
-describe('Funció creaArrayDe3()',  function() {
-    it('creaArray retorna sempre un array', () => {
-        assert.strictEqual( typeof creaArrayDe3(1,2,3), "object"  )
-    })
-})
+describe("Tests per la funció creaArrayDe3()", function () {
+  it("creaArray retorna sempre un array", () => {
+    assert.strictEqual(typeof creaArrayDe3(1, 2, 3), "object");
+  });
+  it("creaArray torna sempre un array de 3 elements", () => {
+    assert.strictEqual(creaArrayDe3(1, 2, 3).length, 3);
+  });
+});
