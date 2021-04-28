@@ -1,6 +1,8 @@
 # Tests Unitaris a Front Web
 
-Tests unitaris amb Mocha.js.
+Tests unitaris amb Mocha.js per a aplicació web (_No per a Node.js_). 
+
+Per veure com fer tests amb Mocha (i Chai) per a Node.js, consultar repositori:  **Pendent pendent pendent posar link !!!**
 
 L'entorn de desenvolupament en aquest cas és una aplicació web. 
 
