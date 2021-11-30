@@ -1,19 +1,26 @@
 import assert from "assert";
-import { suma, creaArrayDe3 } from "../src/js/operacions.mjs";
+import { suma, validadorDeTokens, creaArrayDe3 } from "../src/js/operacions.mjs";
 
-describe("Tests per la funció suma()", function () {
-  it("test: suma() suma 2 numeros correctament", () => {
-    assert.strictEqual(suma(2, 2), 4);
+describe("Tests funció suma()", function () {
+  it("suma correctament", () => {
+    assert.equal(suma(2, 2), 4);
     assert.strictEqual(suma(20, 2), 22);
-    assert.strictEqual(suma(2.5, -2.5), 0);
-  });
+    assert.equal(isNaN(suma(100, "patata")), true);
+ });
+})
 
-  it("test: la suma entre un nombre i no nombre retorna NaN", () => {
-    assert.strictEqual(isNaN(suma(100, "patata")), true);
-  });
-});
+ describe("Tests funció comprovaToken", function () {
+  it("Comprova correctament", () => {
+    assert.equal(validadorDeTokens("AAAAABBBBBCCCCCDDDDD"), true)
+    assert.equal(validadorDeTokens("AAAAABBBB"), false)
+    assert.equal(validadorDeTokens("AAAAABBBBBCCCCCDDDD1"), false)
+ });
+})
 
-describe("Tests per la funció creaArrayDe3()", function () {
+ 
+
+
+describe("Tests funció creaArrayDe3()", function () {
   it("creaArray retorna sempre un array", () => {
     assert.strictEqual(typeof creaArrayDe3(1, 2, 3), "object");
   });

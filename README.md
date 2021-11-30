@@ -39,6 +39,7 @@ npm test
 - [Mocha Docs](https://mochajs.org/)
 - https://nodejs.org/docs/latest-v13.x/api/esm.html#esm_enabling
 - https://stackoverflow.com/questions/45854169/how-can-i-use-an-es6-import-in-node-js
+- https://dev.to/yerac/attempting-to-use-mocha-chai-to-unit-test-es6-3fcm
 
 ### Ampliacions
 Tests amb Mocha (i Chai) per a Node.js, en [aquest repositori](https://github.com/classicoman2/tests-mocha-chai-nodejs-modules).
