@@ -1,17 +1,8 @@
 # Tests Unitaris a Front Web
-## Disclaimer
 
 Tests unitaris amb Mocha.js per a aplicació web (_No per a Node.js_). 
 
-Per veure com fer tests amb Mocha (i Chai) per a Node.js, consultar [aquest repositori](https://github.com/classicoman2/tests-mocha-chai-nodejs-modules).
-
-L'entorn de desenvolupament en aquest cas és una aplicació web. 
-
-Per poder executar els nostres tests, convé canviar l'extensió dels mòduls a `.mjs` i afegir el descriptor de primer nivell `"type": "module"` al package.json més proper.
-
-## Tests amb Mocha
-
-### Instal·la Mocha
+## Preparar l'entorn
 
 1. Instal·la `Mocha` com a dependència de desenvolupament amb:
 ```bash
@@ -30,7 +21,7 @@ npm init -y
   }
 ```
 
-### Configura suport per mòduls ES6
+## Configurar el suport per mòduls ES6
 
 1. Els fitxers de mòduls haurien de tenir l'extensió `.mjs` 
 2. En el fitxer `package.json`, afegeix aquest descriptor en el primer nivell del JSON:
@@ -38,7 +29,7 @@ npm init -y
 "type": "module"
 ```
 
-### Executar els test,
+## Executar els test,
 ```
 npm test
 ```
@@ -48,3 +39,6 @@ npm test
 - [Mocha Docs](https://mochajs.org/)
 - https://nodejs.org/docs/latest-v13.x/api/esm.html#esm_enabling
 - https://stackoverflow.com/questions/45854169/how-can-i-use-an-es6-import-in-node-js
+
+### Ampliacions
+Tests amb Mocha (i Chai) per a Node.js, en [aquest repositori](https://github.com/classicoman2/tests-mocha-chai-nodejs-modules).

@@ -1,7 +1,7 @@
 {
   "name": "tests-unitaris-mochajs",
   "description": "tests unitaris",
-  "type": "module",   
+  "type": "module",
   "scripts": {
     "test": "mocha test"
   },
@@ -11,8 +11,8 @@
     "chai"
   ],
   "devDependencies": {
-    "mocha": "^8.0.1",
-    "axios": "^0.21.1",
-    "chai": "^4.2.0"
+    "axios": "^0.21.4",
+    "chai": "^4.2.0",
+    "mocha": "^9.1.3"
   }
 }
